@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministrarProveedores.GraphicAdministrarProveedoresController">
+   <children>
+      <ListView fx:id="listaProveedores" layoutX="27.0" layoutY="140.0" prefHeight="388.0" prefWidth="302.0" style="-fx-font: 14pt &quot;Cantarell&quot;;" />
+      <TextField fx:id="cBusqueda" layoutX="27.0" layoutY="84.0" prefHeight="45.0" prefWidth="302.0" promptText="Ingresa criterio de búsqueda">
+         <font>
+            <Font name="Cantarell Regular" size="16.0" />
+         </font>
+      </TextField>
+      <Pane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #20B2AA;">
+         <children>
+            <Label layoutX="215.0" layoutY="13.0" text="Control de Proveedores" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="27.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@boton_volver%20web.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="botonAtras" layoutX="24.0" layoutY="2.0" prefHeight="54.0" prefWidth="65.0" />
+         </children>
+      </Pane>
+      <Button fx:id="botonAgregar" layoutX="434.0" layoutY="74.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #32CD32;" text="Agregar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonEditar" layoutX="547.0" layoutY="74.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #FFA500;" text="Editar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonEliminar" layoutX="658.0" layoutY="74.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #DC143C;" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="cRazon" editable="false" layoutX="517.0" layoutY="150.0" prefHeight="40.0" prefWidth="240.0">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cTelUno" editable="false" layoutX="517.0" layoutY="210.0" prefHeight="40.0" prefWidth="240.0">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cCalle" editable="false" layoutX="381.0" layoutY="371.0" prefHeight="40.0" prefWidth="374.0" promptText="Calle">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cCiudad" editable="false" layoutX="378.0" layoutY="459.0" prefHeight="40.0" prefWidth="240.0" promptText="Ciudad">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cCp" editable="false" layoutX="658.0" layoutY="459.0" prefHeight="40.0" prefWidth="100.0" promptText="CP">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="384.0" layoutY="155.0" text="Razón social:">
+         <font>
+            <Font name="Cantarell Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="215.0" text="Teléfono(1):">
+         <font>
+            <Font name="Cantarell Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="273.0" text="Teléfono(2):">
+         <font>
+            <Font name="Cantarell Regular" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cTelDos" editable="false" layoutX="517.0" layoutY="268.0" prefHeight="40.0" prefWidth="240.0" promptText="Opcional">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="382.0" layoutY="334.0" text="Dirección:">
+         <font>
+            <Font name="Cantarell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="384.0" layoutY="422.0" text="Ciudad:">
+         <font>
+            <Font name="Cantarell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="422.0" text="CP:">
+         <font>
+            <Font name="Cantarell Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

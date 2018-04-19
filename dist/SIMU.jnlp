@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SIMU.jnlp">
+  <information>
+    <title>SIMU</title>
+    <vendor>Alan Yoset García C</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SIMU.jar" size="779172" download="eager" />
+    <jar href="lib\iText-5.0.5.jar" size="1599728" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2359643" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.41-bin.jar" size="992808" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SIMU" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="simu.SIMU"  name="SIMU" />
+  <update check="always"/>
+</jnlp>
